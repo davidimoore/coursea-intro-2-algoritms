@@ -3,6 +3,8 @@ import edu.princeton.cs.algs4.WeightedQuickUnionUF;
 public class Percolation {
     WeightedQuickUnionUF grid;
     public Percolation(int n)  {
+        //if (i <= 0 || i > n) throw new IndexOutOfBoundsException("row index i out of bounds");
+
         int sites = n * n;
         grid = new WeightedQuickUnionUF(sites);
     }              // create n-by-n grid, with all sites blocked

@@ -1,0 +1,13 @@
+#!/bin/bash
+source ~/.bash_profile
+
+CLASS_FILE_WITH_PATH="$1"
+CLASS_FILE=$(basename $CLASS_FILE_WITH_PATH | cut -f 1 -d '.')
+CURRENT_DIR=$(pwd)
+CLASS_DIR="$CURRENT_DIR/out/"
+
+cd $CLASS_DIR
+java-algs4 $CLASS_FILE
+
+
+
