@@ -6,3 +6,4 @@ INPUT_FILE_WITH_PATH="$1"
 javac-algs4 -d $OUTPUT_DIR $INPUT_FILE_WITH_PATH
 
 
+
